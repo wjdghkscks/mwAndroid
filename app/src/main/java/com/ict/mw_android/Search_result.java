@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class search_result extends AppCompatActivity {
+public class Search_result extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -12,12 +12,17 @@
         tools:layout="@layout/activity_main" />
     <activity
         android:id="@+id/search2"
-        android:name="com.ict.mw_android.search"
+        android:name="com.ict.mw_android.Search"
         android:label="activity_search"
         tools:layout="@layout/activity_search" />
     <activity
         android:id="@+id/search_result"
-        android:name="com.ict.mw_android.search_result"
+        android:name="com.ict.mw_android.Search_result"
         android:label="activity_search_result"
         tools:layout="@layout/activity_search_result" />
+    <activity
+        android:id="@+id/category"
+        android:name="com.ict.mw_android.Category"
+        android:label="activity_category"
+        tools:layout="@layout/activity_category" />
 </navigation>
