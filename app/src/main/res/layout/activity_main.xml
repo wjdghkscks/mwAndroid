@@ -9,7 +9,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,47 +17,62 @@
             android:orientation="vertical" >
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_menu" />
+
+                <ImageView
                     android:id="@+id/logo"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
+                    android:layout_weight="4"
                     app:srcCompat="@drawable/ic_mw_logo" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_search_icon" />
 
             </LinearLayout>
 
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="wrap_content"
+                android:layout_height="232dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
 
-    <ViewFlipper
-        android:id="@+id/viewFlipper"
-        android:layout_width="wrap_content"
-        android:layout_height="232dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/banner01" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/banner01" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/banner02" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/banner02" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/banner03" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/banner03" />
+            </ViewFlipper>
 
-    </ViewFlipper>
-
-    <LinearLayout
+            <LinearLayout
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
@@ -104,7 +119,7 @@
 
     </LinearLayout>
 
-    <TextView
+            <TextView
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -112,7 +127,7 @@
         android:textSize="21sp"
         android:text="최근 본 가게" />
 
-    <LinearLayout
+            <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
@@ -169,10 +184,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textSize="12sp"
-                    android:text="000" />
+                    android:text="0,000" />
 
                 <ImageView
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="12dp"
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:layout_gravity="center"
@@ -184,7 +199,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textSize="12sp"
-                    android:text="000" />
+                    android:text="0,000" />
 
                 <ImageView
                     android:layout_marginLeft="15dp"
@@ -199,11 +214,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textSize="12sp"
-                    android:text="000" />
+                    android:text="0,000" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout
+            <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
@@ -260,10 +275,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textSize="12sp"
-                    android:text="000" />
+                    android:text="0,000" />
 
                 <ImageView
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="12dp"
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:layout_gravity="center"
@@ -275,7 +290,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textSize="12sp"
-                    android:text="000" />
+                    android:text="0,000" />
 
                 <ImageView
                     android:layout_marginLeft="15dp"
@@ -290,103 +305,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textSize="12sp"
-                    android:text="000" />
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            app:srcCompat="@drawable/shop" />
-
-        <LinearLayout
-            android:layout_marginLeft="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="7dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="가게 이름"
-                    android:textStyle="bold"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_marginTop="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="가게에 대한 간단한 설명이 들어갑니다."
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginTop="18dp"
-                android:layout_marginLeft="7dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_watch" />
-
-                <TextView
-                    android:layout_marginLeft="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="12sp"
-                    android:text="000" />
-
-                <ImageView
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_write" />
-
-                <TextView
-                    android:layout_marginLeft="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="12sp"
-                    android:text="000" />
-
-                <ImageView
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_like" />
-
-                <TextView
-                    android:layout_marginLeft="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="12sp"
-                    android:text="000" />
+                    android:text="0,000" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
         </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>

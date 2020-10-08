@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8a761"
+    android:orientation="vertical"
+    tools:context=".Main_menu">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="메뉴" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:layout_margin="10dp"
+            android:text="명월소개" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가게찾기"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="문의하기"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내 정보"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="right"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닫기" />
+
+</LinearLayout>

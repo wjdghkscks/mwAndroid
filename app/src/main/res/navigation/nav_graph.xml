@@ -25,4 +25,14 @@
         android:name="com.ict.mw_android.Category"
         android:label="activity_category"
         tools:layout="@layout/activity_category" />
+    <activity
+        android:id="@+id/main_menu"
+        android:name="com.ict.mw_android.Main_menu"
+        android:label="activity_main_menu"
+        tools:layout="@layout/activity_main_menu" />
+    <activity
+        android:id="@+id/store_detail"
+        android:name="com.ict.mw_android.Store_detail"
+        android:label="activity_store_detail"
+        tools:layout="@layout/activity_store_detail" />
 </navigation>

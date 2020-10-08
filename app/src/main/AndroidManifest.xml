@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Category"></activity>
+        <activity android:name=".Ask_write"></activity>
+        <activity android:name=".Ask" />
+        <activity android:name=".Category" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Search_result" />
+        <activity android:name=".Search" />
+        <activity android:name=".Main_menu" />
         <activity android:name=".Store_detail" />
-        <activity android:name=".Search">
+        <activity android:name=".Search_result">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
