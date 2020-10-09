@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ask_write"></activity>
+        <activity android:name=".My_Review"></activity>
+        <activity android:name=".My_Like" />
+        <activity android:name=".My_info" />
+        <activity android:name=".Ask_write" />
         <activity android:name=".Ask" />
         <activity android:name=".Category" />
         <activity android:name=".MainActivity" />
